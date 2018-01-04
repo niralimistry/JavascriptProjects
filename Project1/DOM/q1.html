@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q1</title>
+</head>
+<body>
+<p id="demo"></p>
+txt11:<input type="text" id="b1" value="b1">
+txt2<input type="text" id="b2" value="b2">
+<button type="button" onclick="func()"></button>
+<script>
+    function func() {
+        var x = document.getElementById("b1");
+        var y = document.getElementById("b2");
+
+        if (x.value) {
+            y.value = x.value;
+        }
+    }
+</script>
+</body>
+</html>

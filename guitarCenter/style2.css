@@ -1,0 +1,95 @@
+
+
+.navbar-nav>li{
+    padding-right: 55px;
+    padding-left:20px;
+
+}
+
+.nav-item:hover{
+    background-color: gray;
+}
+
+#imgElement{
+    border: 10px solid lightgray;
+    border-radius: 8px;
+}
+#register-button-email-submit {
+    background-color: #18E109;
+    border: 1px solid #18E109;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+    display:block;
+    width:500px;
+}
+
+#signUpFacebook {
+    border-radius: 20px;
+}
+
+.details{
+    border:1px solid black;
+    border-radius: 5px;
+    padding:3px;
+}
+#form1 {
+    width: 500px;
+    margin: auto;
+}
+
+html,body {
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.line-thru {
+    display: block;
+    font-size: .875em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+strong.line-thru::before {
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+    content: '';
+    margin: -5px 0 0 -20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+strong.line-thru::after {
+
+    border-bottom: 1px solid #dfe0e6;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    z-index: -2;
+}
+
+h2{
+    color: #1c1c1f;
+    margin-bottom: 1em;
+}
+
+.hdr-l{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 .5em;
+    text-rendering: optimizelegibility;
+    text-align: center;
+}

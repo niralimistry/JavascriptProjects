@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q2a</title>
+</head>
+<body>
+<button id="demo" onclick="setValue('Bruce','Wayne','45')">Hello</button>
+<script>
+
+    function setValue(fName,lName,age) {
+        setCustInfo(fName);
+        displayCustInfo(lName);
+        window.alert("Age: " + age);
+    }
+
+    function setCustInfo(name) {
+        window.alert("The name is set as:" + name);
+    }
+
+    function displayCustInfo(name) {
+        window.alert("Name is displayed as:" + name);
+    }
+
+</script>
+</body>
+</html>

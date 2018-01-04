@@ -1,0 +1,36 @@
+#boxShadow{
+    margin-top:22px;
+    border-radius: 10px;
+    height:590px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.navbar-nav>li{
+    padding-right: 55px;
+    padding-left:20px;
+
+}
+
+.nav-item:hover{
+    background-color: gray;
+}
+
+html,body {
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+p{
+    color:white;
+}
+
+#imgElement{
+    border: 10px solid lightgray;
+    border-radius: 8px;
+}

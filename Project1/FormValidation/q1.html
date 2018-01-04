@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q1</title>
+</head>
+<body>
+<form action="">
+    firstName:<input type="text" id="ft"><br>
+    lastName:<input type="text" id="lt"><br>
+    Gender:
+    male<input type="radio" id="male" value="male">
+    female<input type="radio" id="female" value="female"><br>
+    <select name="state" id="state">
+        <option value="selectstate">Please select state</option>
+        <option value="nj">NJ</option>
+        <option value="ny">NY</option>
+        <option value="oh">oh</option>
+        <option value="ca">ca</option>
+    </select><br>
+    <input type="checkbox" name="I accept" id="accept"> I Accept<br>
+    <input type="checkbox" name="submit" id="submit">Submit<br>
+    <button type="button" onclick="submitbutton()">Submit</button>
+</form>
+</body>
+<script>
+    function submitbutton() {
+        var x = document.getElementById("ft").value;
+        var y = document.getElementById("lt").value;
+        var ddl = document.getElementById("state");
+        if (!x) {
+            document.getElementById("ft").style.backgroundColor = "red";
+            alert("Please enter first name");
+
+        }
+        else if (!isNaN(x)) {
+            document.getElementById("ft").style.backgroundColor = "red";
+            alert("please enter string");
+
+        }
+        if (!y) {
+            alert("Please enter last name");
+            document.getElementById("lt").style.backgroundColor = "red";
+        }
+        else if (!isNaN(y)) {
+            alert("please enter string");
+            document.getElementById("lt").style.backgroundColor = "red";
+        }
+
+        if ((!document.getElementById("male").checked) && (!document.getElementById("female").checked)) {
+            alert("select gender");
+        }
+
+        if(ddl.selectedIndex === 0) {
+            alert('select one state');
+        }
+        if ((!document.getElementById("accept").checked) && (!document.getElementById("submit").checked)) {
+            alert("select one checkbox");
+        }
+
+
+
+
+    }
+</script>
+</html>

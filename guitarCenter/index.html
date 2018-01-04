@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guitar Center</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body onload="loadDoc()">
+<div>
+    <img src="tile-gc-preheader-promo.jpg" style="height:75px;" alt="">
+</div>
+<nav class="navbar navbar-toggleable-md navbar-inverse navbar-light bg-faded" style="margin:5px;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Used Gear</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Platinum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Vintage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Outlet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">GC Pro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Lessons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Repairs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Rentals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="input-group input-group-lg" style="margin:5px;">
+    <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1">
+    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"
+                                                            aria-hidden="true"></span></span>
+</div>
+<div>
+<button class="btn btn-outline-success" style="margin-left:10px" onclick="getLocation()">Location</button>
+<span id="demo"></span>
+</div>
+<div class="container">
+
+    <!--<button type="button" class="btn btn-info" onclick="prevImage()">&laquo;PREV</button>-->
+    <a class="left carousel-control" href="#myCarousel" onclick="prevImage()" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+    <img id="imgElement" class="img-thumbnail" src="" style="width:1138px; height: 640px;">
+    <a class="right carousel-control" href="#myCarousel" onclick="nextImage()" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    <!--<button type="button" class="btn btn-info" onclick="nextImage()">NEXT&raquo;</button>-->
+</div>
+
+
+<div class="panel-group" id="accordion" style="margin:10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Product Info</a>
+            </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+            <div class="details" id="productInfo"></div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Shipping Info</a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="details" id="shippingInfo"></div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Customer
+                            Reviews</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="details" id="customerReviews"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-success"
+        style="display:block;margin-bottom:20px;float:right;width:20%;border-radius:10px;">
+    <a href="buy.html" onload="index()" style="text-decoration: none;color:white">BUY</a>
+</button>
+
+
+<script type="text/javascript" src="script1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+</html>

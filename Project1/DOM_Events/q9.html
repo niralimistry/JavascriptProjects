@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q9</title>
+</head>
+<body>
+<button type="button" onclick="checkUrl()">CHECK URL</button>
+<button type="button" id="addLink" onclick="addLink()" disabled>ADD LINK</button>
+<div id="demo1"></div>
+<div id="demo2" style = "float:right"></div>
+<script>
+    var arr = new Array([5]);
+    arr.push("https://www.google.com");
+    arr.push("https://stackoverflow.com/questions/1200621/how-do-i-declare-and-initialize-an-array-in-java");
+    arr.push("www.yahoo.com");
+    arr.push("www.w3schools.com/");
+    arr.push("mail.google.com");
+    var text = " ";
+    var i;
+    for (i = 0; i < arr.length; i++) {
+        text += arr[i] + "<br>";
+        document.getElementById("demo1").innerHTML = text;
+    }
+    function checkUrl() {
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] === "http://www.pro-tekconsulting.com/") {
+                break;
+            } else {
+                i++;
+            }
+
+        }
+        document.getElementById("addLink").disabled = false;
+        alert("Protek is not here!!! Add it");
+    }
+
+    function addLink() {
+        arr.push("http://www.pro-tekconsulting.com/");
+
+    }
+
+</script>
+</body>
+</html>

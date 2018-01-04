@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q1</title>
+</head>
+<body>
+<script>
+    //Invoking a Function as a Func
+    function displayValue(param1, param2, param3) {
+        window.alert("" +param1+" "+param2+" "+param3);
+    }
+
+    window.displayValue(1, 2, 4);
+
+    //Invoking a Function with a Function Constructor
+    function myFunc(param1, param2, param3) {
+        this.first = param1;
+        this.second = param2;
+        this.third = param3;
+    }
+
+    var x = new myFunc("John", "Doe", "Nirali");
+    window.alert(""+x.first+" "+x.second+" "+x.third);
+</script>
+</body>
+</html>

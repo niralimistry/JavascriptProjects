@@ -1,0 +1,45 @@
+
+.navbar-nav>li{
+    padding-right: 55px;
+    padding-left:20px;
+
+}
+
+.nav-item:hover{
+    background-color: gray;
+}
+
+.imgElement{
+    margin:10px;
+    background-color: #DBD7CC;
+    width: 1138px;
+    height: 640px;
+    border: 10px solid transparent;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+
+html,body {
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+/*.bimage{*/
+    /*background-image:url('tile-gc-preheader-promo.jpg');*/
+/*}*/
+
+/*.bimage h1{*/
+    /*margin:auto;*/
+    /*color:white;*/
+    /*padding:20px;*/
+    /*font-size:20px;*/
+    /*text-align: center;*/
+/*}*/
+

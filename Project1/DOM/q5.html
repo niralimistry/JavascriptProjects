@@ -1,0 +1,34 @@
+<html>
+<body>
+<img id="img" src="car5.gif" style="width:100px;height:100px"><br>
+<button onclick="myFunction1()">Prev</button>
+<button onclick="myFunction2()">Next</button>
+</body>
+<script>
+    var images =
+        ["car1.gif", "car2.gif", "car3.gif", "car4.gif", "car5.gif", "car6.gif"];
+    var cur_img = 1;
+    var num_img = 7;
+
+    function myFunction1() {
+        if (cur_img > 1) {
+            cur_img = cur_img - 1;
+            document.getElementById("img").src = images[cur_img];
+        }
+        else{
+            alert("This is the first image");
+        }
+    }
+
+    function myFunction2() {
+        if (cur_img < num_img) {
+            cur_img = cur_img + 1;
+            document.getElementById("img").src = images[cur_img];
+        }else{
+            alert("This is the last image");
+        }
+    }
+
+
+</script>
+</html>

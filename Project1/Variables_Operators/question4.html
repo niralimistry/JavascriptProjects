@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local and Global Variables</title>
+</head>
+<body>
+<button type="button" onclick="localGlobal()">Local&Global</button>
+<script>
+    var a = 20, b = 30;
+
+    function localGlobal() {
+        d = 40;
+        var c = 10;
+        window.alert("Local variables: " + c);
+        window.alert("Global variables: " + a + " "+ b +" "+ d);
+    }
+</script>
+</body>
+</html>

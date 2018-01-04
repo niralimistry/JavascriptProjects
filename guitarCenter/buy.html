@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BUY</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body onload="loadBody()">
+<div>
+    <img src="tile-gc-preheader-promo.jpg"  style="height:75px;" alt="">
+</div>
+<nav class="navbar navbar-toggleable-md navbar-inverse navbar-light bg-faded" style="margin:5px;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Used Gear</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Platinum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Vintage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Outlet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">GC Pro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Lessons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Repairs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Rentals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="" alt="hello" class="img-thumbnail" id="imgElement"
+                 style="float: left;margin-left:70px;margin-top:20px;width:400px;height:366px;">
+        </div>
+        <div class="col-sm-6">
+            <div id="productInfo" class="details"></div>
+            <br>
+            <div id="no_of_items" class="details"></div>
+            <br>
+            <div id="price" class="details"></div>
+            <br>
+            <div id="stock_availability" class="details"></div>
+            <br>
+            <div id="shippingInfo" class="details"></div>
+            <br>
+            <div id="customerReviews" class="details"></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <form id="form1" onSubmit="return signupCheck()">
+                <button class="btn btn-sm btn-primary btn-block" id="signUpFacebook" type="submit">
+                    Sign Up using
+                    Facebook
+                </button>
+                <strong class="line-thru">or</strong>
+                <h2 class="center hdr-l">Sign up with your email address</h2>
+                <p>
+                    <label for="firstName" class="control-label">First Name:</label>
+                    <input id="firstName" placeholder="Enter First Name" maxlength="20" class="form-control" type="text"
+                           required/></p>
+                <p>
+                    <label for="lastName" class="control-label">Last Name:</label>
+                    <input id="lastName" placeholder="Enter Last Name" maxlength="20" class="form-control" type="text"
+                           required/></p>
+
+                <p>
+                    <label for="address1" class="control-label">Address 1:</label>
+                    <input id="address1" placeholder="Enter Address Line One" maxlength="35" class="form-control"
+                           type="text" required/>
+                <p>
+                    <label for="address2" class="control-label">Address 2:</label>
+                    <input id="address2" placeholder="Enter Address Line Two" maxlength="35" value=""
+                           class="form-control" type="text"/></p>
+                <p>
+                    <label for="companyName" class="control-label">Company or C/O:</label>
+                    <input id="companyName" placeholder="Enter Company Name" maxlength="35" value=""
+                           class="form-control" type="text"/></p>
+                <p>
+                    <label for="country" class="control-label">Select Country (with states):</label>
+                    <select id="country" name="country" required>
+
+                    </select>
+                </p>
+                <p>
+                    <label for="state" class="control-label">State:</label>
+                    <select name="state" id="state" required>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="postalCode" class="control-label">ZIP Code:</label>
+                    <input id="postalCode" title="Enter Postal Code" maxlength="6" value=""
+                           class="form-control" type="number" required/></p>
+                <div>
+                    <div id="contactFields">
+                        <p>
+                            <label for="phoneNumber" class="control-label">Phone:</label>
+                            <input type="number" id="phoneNumber" maxlength="10" class="form-control"
+                                   placeholder="(XXX) XXX-XXXX" required/>
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    <label for="email" class="control-label">Email:</label>
+                    <input id="email" title="Enter Email" maxlength="20" class="form-control" type="email" required/></p>
+                <p>
+                    <label for="password" class="control-label">Password:</label>
+                    <input id="password" title="Enter Password" maxlength="20" class="form-control" type="password" required/></p>
+                <input type="checkbox" checked="checked"> Remember me
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <button type="submit" id="register-button-email-submit">Sign up</button>
+            </form>
+
+        </div>
+        <!--<div class="col-sm-6">-->
+        <div id="showDiv" style="visibility:hidden">
+            <div>
+                <label for="fN">FirstName:</label>
+                <span id="fN"></span><br>
+
+                <label for="lN">LastName:</label>
+                <span id="lN"></span><br>
+
+                <label for="emailText">Email:</label>
+                <span id="emailText"></span><br>
+
+                <label for="passwordText">Password:</label>
+                <span id="passwordText"></span><br>
+
+                <label for="companyNameText">Company Name</label>
+                <span id="companyNameText"></span><br>
+
+                <label for="phoneNumberText">Phone Number</label>
+                <span id="phoneNumberText"></span><br>
+
+                <label for="address1Text">Address 1:</label>
+                <span id="address1Text"></span><br>
+
+                <label for="address2Text">Address 2:</label>
+                <span id="address2Text"></span><br>
+
+                <label for="countryText">Country:</label>
+                <span id="countryText"></span><br>
+
+                <label for="stateText">State:</label>
+                <span id="stateText"></span><br>
+
+                <label for="postalCodeText">Postal Code:</label>
+                <span id="postalCodeText"></span><br>
+
+            </div>
+            <div>
+                <a href="#" class="btn btn-warning btn-lg" onclick="edit()">Edit</a>
+                <a href="#" class="btn btn-primary btn-lg" onclick="save()">Save</a>
+            </div>
+            <br>
+            <br>
+            <div>
+                <a class="btn btn-lg btn-success" href="review.html" onclick="reviewOrder()">Review Order</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="script2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+</body>
+</html>

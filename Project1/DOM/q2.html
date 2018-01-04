@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setInterval</title>
+</head>
+<body>
+<img src="car5.gif" alt="car5" id="changeImage">
+<button type="button" onclick="setInterval(myVar)">change images</button>
+<script>
+    var index = 0;
+    var arr = ["car1.gif","car2.gif","car3.gif","car4.gif","car5.gif"];
+    var myVar = setInterval(func,1000);
+    function func(){
+        var x = document.getElementById("changeImage");
+        x.src = arr[index];
+        index++;
+    }
+    if(index>5){
+        clearInterval(myVar);
+    }
+</script>
+</body>
+</html>

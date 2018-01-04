@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q1c</title>
+</head>
+<body>
+<p>Setting a default value to a function parameter.</p>
+<p id="demo"></p>
+<script>
+    function myFunction(x, y) {
+        var x = 9;
+        if (y === undefined) {
+            y = 5;
+        }
+        return x * y;
+    }
+    document.getElementById("demo").innerHTML = myFunction(4);
+</script>
+</body>
+</html>

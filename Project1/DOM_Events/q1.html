@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q1</title>
+</head>
+<body>
+Enter fahrenheit temp:<input type="text" id="fahrenheit" onkeyup="toCelcius()"><br>
+<!--<button type="button" >convert</button><br>-->
+<div id="result">to celcius</div>
+
+
+<script>
+
+    function toCelcius(){
+        if(!isNaN){
+        var f = document.getElementById("fahrenheit").value;
+        y  = (5/9) * (f-32);
+        document.getElementById("result").innerHTML = y.toFixed();
+    }else{
+        alert("enter number");
+    }}
+</script>
+</body>
+</html>

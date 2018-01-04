@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q1</title>
+</head>
+<body>
+
+State:
+<select id="selectId" onchange="myFunction(this.value)">>
+    <option value="1">Make Invisible</option>
+    <option value="2">Change Color</option>
+    <option value="3">Make visible & change color</option>
+    <option value="4">Default</option>
+</select><br>
+<div id="demo">helllllloooooo</div>
+<script>
+    var txt = document.getElementById("demo");
+  function myFunction(val){
+      if(val === "1"){txt.style.visibility="none";}
+      if(val === "2"){txt.style.backgroundColor="orange";}
+      if(val === "3"){txt.style.visibility="visible";
+          txt.style.color="blue"}
+      if(val === "4"){
+          txt.style.visibility="visible";
+          txt.style.color="red";
+      }}
+</script>
+</body>
+</html>
+

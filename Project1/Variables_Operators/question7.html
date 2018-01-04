@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="add()">add</button>
+<button type="button" onclick="sub()">sub</button>
+<button type="button" onclick="multiply()">multiply</button>
+<script>
+    var a = 90, b = 8;
+
+    function add() {
+        a++;
+        window.alert("add of: " + (a + b));
+    }
+
+    function sub() {
+        a--;
+        window.alert("sub of: " + (a - b));
+    }
+
+    function multiply() {
+        var a = 10;
+        window.alert("Sum:" + (a+b)+" Sub:"+(a-b)+" Divide:"+(a/b)+" Multiply:"+(a*b)+" Modulus:"+(a%b));
+    }
+</script>
+</body>
+</html>
